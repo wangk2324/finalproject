@@ -1,0 +1,30 @@
+@import url(https://fonts.googleapis.com/css?family=Karla);
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+h4{font: bold 14px 'Karla', sans-serif;}
+
+
+
+
+
+#fullCode{
+    max-width: 1000px;
+    margin: 20px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-flex: 1;
+}
+#topBanner{
+    border: 2px solid cadetblue; padding: 20px;
+}
+#inputs{
+    border: 2px solid cadetblue;
+    margin: 20px; padding: 20px;
+    -webkit-box-ordinal-group: 1;
+    -webkit-box-flex: 5;
+    -webkit-transition:
+}
