@@ -2,9 +2,16 @@
  * Created by wangk2324 on 5/9/2016.
  */
 
-function validate(){
-    var P = document.forms.input.initial.value;
-    var r = document.forms.input.initial.value;
-    var t = document.forms.input.initial.value;
+function calculate() {
+    var P = document.getElementById("initial");
+    var r = document.getElementById("rate");
+    var t = document.getElementById("years");
+    var compound = document.getElementById("continuous");
+    var times = document.getElementById("compounded");
+    var finalamt = 0;
 
+
+    if (compound == "yes")
+        finalamt = P * ((math.E) ^ (r/100)*t);
+    alert(finalamt);
 }
