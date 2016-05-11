@@ -1,14 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Karla);
 
-
 *{
     margin: 0px;
     padding: 0px;
 }
-h4{font: bold 14px 'Karla', sans-serif;}
-
-
-
+h1{font: bold 28px 'Karla', sans-serif;}
+header, form, aside{display: block;}
+body{width: 100%; display: -webkit-box; -webkit-box-pack: center;}
 
 
 #fullCode{
@@ -17,14 +15,19 @@ h4{font: bold 14px 'Karla', sans-serif;}
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-box-flex: 1;
+    font: bold 16px 'Karla', sans-serif;
 }
 #topBanner{
     border: 2px solid cadetblue; padding: 20px;
+    background: lightcyan;
 }
 #inputs{
     border: 2px solid cadetblue;
     margin: 20px; padding: 20px;
     -webkit-box-ordinal-group: 1;
-    -webkit-box-flex: 5;
-    -webkit-transition:
+    -webkit-box-flex: 10;
+    background: lightcyan;
+}
+#calculate, #reset{
+    font: bold 14px 'Karla', sans-serif;
 }
