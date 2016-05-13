@@ -3,15 +3,26 @@
  */
 
 function calculate() {
-    var P = document.getElementById("initial");
-    var r = document.getElementById("rate");
-    var t = document.getElementById("years");
-    var compound = document.getElementById("continuous");
-    var times = document.getElementById("compounded");
+    var P = document.getElementById('initial').value;
+    var r = document.getElementById('rate').value;
+    var t = document.getElementById('years').value;
+    //var continuous = document.getElementById("continuous").value;
+    var times = document.getElementById('compounded').value;
     var finalamt = 0;
+    var continuously = '';
 
 
-    if (compound == "yes")
-        finalamt = P * ((math.E) ^ (r/100)*t);
-    alert(finalamt);
+    if (document.getElementById('o1').checked) {
+        document.getElementById('o1').value = continuously;
+    }
+
+    if (continuously == "yes") {
+        finalamt = P * (Math.exp((r / 100) * t));
+        alert(finalamt);
+        }
+
+
+    function reset() {
+        document.getElementById('inputs').reset();
+    }
 }
