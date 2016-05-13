@@ -1,0 +1,28 @@
+/**
+ * Created by wangk2324 on 5/9/2016.
+ */
+
+function calculate() {
+    var P = document.getElementById('initial').value;
+    var r = document.getElementById('rate').value;
+    var t = document.getElementById('years').value;
+    //var continuous = document.getElementById("continuous").value;
+    var times = document.getElementById('compounded').value;
+    var finalamt = 0;
+    var continuously = '';
+
+
+    if (document.getElementById('o1').checked) {
+        document.getElementById('o1').value = continuously;
+    }
+
+    if (continuously == "yes") {
+        finalamt = P * (Math.exp((r / 100) * t));
+        alert(finalamt);
+        }
+
+
+    function reset() {
+        document.getElementById('inputs').reset();
+    }
+}
