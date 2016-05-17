@@ -8,18 +8,20 @@ function calculate() {
     var t = document.getElementById('years').value;
     //var continuous = document.getElementById("continuous").value;
     var times = document.getElementById('compounded').value;
+
+    //alert(P +" " + r + " " + t + " " + times);
     var finalamt = 0;
     var continuously = '';
 
 
     if (document.getElementById('o1').checked) {
-        document.getElementById('o1').value = continuously;
+        continuously  = document.getElementById('o1').value;
     }
 
     if (continuously == "yes") {
         finalamt = P * (Math.exp((r / 100) * t));
         alert(finalamt);
-        }
+    }
 
 
     function reset() {
