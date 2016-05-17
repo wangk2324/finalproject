@@ -1,21 +1,16 @@
-/**
- * Created by wangk2324 on 5/9/2016.
- */
-
 function calculate() {
-    var P = document.getElementById('initial').value;
-    var r = document.getElementById('rate').value;
-    var t = document.getElementById('years').value;
-    //var continuous = document.getElementById("continuous").value;
-    var times = document.getElementById('compounded').value;
+    var P = document.getElementById("initial").value;
+    var r = document.getElementById("rate").value;
+    var t = document.getElementById("years").value;
 
-    //alert(P +" " + r + " " + t + " " + times);
+
+    //var continuous = document.getElementById("YN");
+    var times = document.getElementById("frequency").value;
     var finalamt = 0;
     var continuously = '';
 
-
     if (document.getElementById('o1').checked) {
-        continuously  = document.getElementById('o1').value;
+        continuously = document.getElementById("o1").value;
     }
 
     if (continuously == "yes") {
@@ -24,7 +19,14 @@ function calculate() {
     }
 
 
-    function reset() {
-        document.getElementById('inputs').reset();
+ /*   else {
+        finalamt = P * (1 + (r / 100) / times) ^ (times * t);
+        alert(finalamt);
+    }
+    */
+
+function reset() {
+     document.getElementById('inputs').reset();
     }
 }
+
