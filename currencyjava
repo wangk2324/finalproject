@@ -15,6 +15,9 @@ function compute(){
         if (final == "cny"){
             finalamt = CASHMONEY * 6.556134
         }
+        if (final == "eur"){
+            finalamt = CASHMONEY * 0.892647
+        }
     }
 
     if (start == "cad"){
@@ -24,6 +27,10 @@ function compute(){
         }
         if (final == "cny"){
             finalamt = CASHMONEY * 4.986939;
+            alert (finalamt)
+    }
+        if (final == "eur"){
+            finalamt = CASHMONEY * 0.679380;
             alert (finalamt)
         }
     }
@@ -37,7 +44,26 @@ function compute(){
             finalamt = CASHMONEY * 0.200422;
             alert(finalamt)
         }
+        if (final == "eur"){
+            finalamt = CASHMONEY * 0.136239;
+            alert (finalamt)
+        }
     }
-    
-    
+
+    if (start == "eur"){
+        if (final == "usd") {
+            finalamt = CASHMONEY * 1.120264;
+            alert(finalamt)
+        }
+        if (final == "cad"){
+            finalamt = CASHMONEY * 1.471810;
+            alert(finalamt)
+        }
+        if (final == "cny"){
+            finalamt = CASHMONEY * 7.344355;
+            alert (finalamt)
+        }
+    }
+
+
 }
