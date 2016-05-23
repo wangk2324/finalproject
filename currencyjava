@@ -1,0 +1,43 @@
+/**
+ * Created by wangk2324 on 5/23/2016.
+ */
+function compute(){
+    var CASHMONEY = document.getElementById('amount').value;
+    var start = document.getElementById('startcur').value;
+    var final = document.getElementById('endcur').value;
+    var finalamt = 0;
+
+    if (start == "usd"){
+        if (final == "cad"){
+            finalamt = CASHMONEY * 1.315055;
+            alert (finalamt)
+        }
+        if (final == "cny"){
+            finalamt = CASHMONEY * 6.556134
+        }
+    }
+
+    if (start == "cad"){
+        if (final == "usd"){
+            finalamt = CASHMONEY * 0.760160;
+            alert (finalamt)
+        }
+        if (final == "cny"){
+            finalamt = CASHMONEY * 4.986939;
+            alert (finalamt)
+        }
+    }
+
+    if (start == "cny"){
+        if (final == "usd") {
+            finalamt = CASHMONEY * 0.152550;
+            alert(finalamt)
+        }
+        if (final == "cad"){
+            finalamt = CASHMONEY * 0.200422;
+            alert(finalamt)
+        }
+    }
+    
+    
+}
