@@ -4,10 +4,17 @@
     margin: 0px;
     padding: 0px;
 }
-h1{font: bold 28px 'Karla', sans-serif;}
+h1{font: bold 28px 'Karla', sans-serif; color: teal; text-align: center}
 header, form, aside{display: block;}
 body{width: 100%; display: -webkit-box; -webkit-box-pack: center;}
+a{color: teal}
 
+#topNav{ background: lightcyan; color: teal;}
+#topNav li {display: inline-block; list-style: none; padding:5px;
+    border: 2px solid teal
+    -webkit-border-radius: 3px;
+    -webkit-transition: -webkit-transform .25s}
+#topNav li:hover{-webkit-transform: scale(1.1,1.1)}
 
 #fullCode{
     max-width: 1000px;
@@ -22,11 +29,14 @@ body{width: 100%; display: -webkit-box; -webkit-box-pack: center;}
     background: lightcyan;
 }
 #inputs{
-    border: 2px solid cadetblue;
+    border: 2px solid teal;
     margin: 20px; padding: 20px;
     -webkit-box-ordinal-group: 1;
     -webkit-box-flex: 10;
     background: lightcyan;
+}
+#side{
+    text-align: center; padding: 20px; border-top: 2px solid teal;
 }
 #calculate, #reset{
     font: bold 14px 'Karla', sans-serif;
