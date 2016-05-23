@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Currency Conversion</title>
+    <link rel = "stylesheet" href = "mainStyle.css"/>
+    <script src = "ConversionJava.js"></script>
+</head>
+<body>
+<div id = "fullCode">
+    <header id = "topBanner">
+        <h1>Conversion Calculator</h1>
+    </header>
+    <nav id = "topNav">
+        <ul>
+            <li><a href = "mainPage.html">Financial Calculator</a></li>
+            <li><a href = "conversion.html">Currency Conversion</a></li>
+        </ul>
+    </nav>
+    <div id = "inputs">
+    <form id = "awesome">
+        Amount: <input type = "number" id = "amount" name = "amount">
+        Starting Currency:
+            <select id = "startcur">
+                <option value = "cad">Canadian dollar (CAD)</option>
+                <option value = "cny">Chinese Yuan Renminbi (CNY)</option>
+                <option value = "usd">US Dollar (USD)</option>
+            </select>
+
+        Final Currency:
+            <select id = "endcur">
+                <option value = "cad">Canadian Dollar (CAD)</option>
+                <option value = "cny">Chinese Yuan Renminbi (CNY)</option>
+                <option value = "usd">US Dollar (USD)</option>
+            </select>
+        <input id = "calculate" type = "submit" value = "Submit!" onclick = "compute()">
+    </form>
+    </div>
+    <footer id = "side">
+        <h4>Accurate as of 5/23/2015</h4>
+        <h4>Made by Kathy Wang and Emily Zhang for Mr. Robinette's Computer Programming Class</h4>
+    </footer>
+</div>
+</body>
+</html>
