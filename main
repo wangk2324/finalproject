@@ -2,36 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-        <title> Financial Calculators </title>
+    <title>Financial Calculator</title>
     <link rel = "stylesheet" href = "mainStyle.css"/>
-            <script src = "popUp.js"></script>
+    <script src = "popUp.js"></script>
 </head>
 <body>
 <div id = "fullCode">
     <header id = "topBanner">
         <h1>Interest Calculator</h1>
     </header>
+    <nav id = "topNav">
+        <ul>
+            <li><a href = "mainPage.html">Financial Calculator</a></li>
+            <li><a href = "conversion.html">Currency Conversion</a></li>
+        </ul>
+    </nav>
     <div id = "inputs">
     <form id = "awesome">
-            Initial Principal: <input type = "number" name = "initial" id = "initial"/><br/><br/>
-            Interest Rate (%): <input type = "number" name = "rate"/><br/><br/>
-            Years to Grow: <input type = "number" name = "years"/><br/><br/>
-            Compounded Continuously?<br/>
-
-            <form id = "YN">
-                <input type = "radio" name = "continuous" value = "yes" id = "o1">Yes<br/>
-                <input type = "radio" name = "continuous" value = "no" id = "o2">No<br/><br/>
-
-            </form>
-            Times Compounded per Year: <input type = "number" id = "frequency" name = "compounded"/><br/><br/>
-            <input id = "calculate" type = "submit" value = "Submit!" onclick = "calculate()">
-            <input id = "reset" type = "button" value = "Reset!" onclick = "reset()">
+        Initial Principal: <input type = "number" id = "initial" name = "initial"/><br/><br/>
+        Interest Rate (%): <input type = "number" id = "rate" name = "rate"/><br/><br/>
+        Years to Grow: <input type = "number" id = "years" name = "years"/><br/><br/>
+        Times Compounded per Year: <input type = "number" id = "compounded" name = "compounded"/><br/><br/>
+        Compounded Continuously?<br/>
+        <form id = "continuous">
+            <input type = "radio" name = "continuous" id = "o1" value = "yes" checked>Yes<br/>
+            <input type = "radio" name = "continuous" id = "o2" value = "no">No<br/><br/>
+        </form>
+        <input id = "calculate" type = "submit" value = "Submit!" onclick = "calculate()">
+        <input id = "reset" type = "button" value = "Reset!" onclick = "fun()">
     </form>
     </div>
-    <aside id = "side">
-        <h4>Made by Kathy Wang and Emily Zhang</h4>
-    </aside>
+    <footer id = "side">
+        <h4>Made by Kathy Wang and Emily Zhang for Mr. Robinette's Computer Programming Class</h4>
+    </footer>
 </div>
 </body>
-
 </html>
